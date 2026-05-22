@@ -29,3 +29,11 @@ Bump to `'all'` in `config/postgresql.conf` if you need full query logs.
 `apply_migrations.sh` relies on shell glob lexicographic ordering. Keep
 the `NNN_description.sql` convention so `010_*.sql` and `100_*.sql` sort
 correctly.
+
+## Migration history reference
+
+For audit / on-call use, see [`MIGRATION_HISTORY.md`](../MIGRATION_HISTORY.md)
+at the repository root. That file is the authoritative record of which
+migrations have been applied in any deployed environment of this
+database; the `migrations/` directory may be a subset of the history
+due to archival.
